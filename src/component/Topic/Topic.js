@@ -1,11 +1,14 @@
 import React from 'react';
-import {useLoaderData} from 'react-router-dom'
-const Topic = () => {
-    const quiz = useLoaderData()
-    console.log(quiz);
+
+const Topic = ({topic}) => {
+    const {question , options , correctAnswer} = topic;
     return (
         <div>
-          
+            <div>
+            <h2>{question}</h2>
+            </div>
+            <p>{options}</p>
+            <h2>{correctAnswer}</h2>
         </div>
     );
 };
