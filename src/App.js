@@ -5,7 +5,6 @@ import Home from './component/Home/Home';
 import Topic from './component/Topic/Topic';
 import Blog from './component/Blog/Blog';
 import ErrorElement from './component/ErrorElement/ErrorElement';
-import Product from './component/Product/Product';
 function App() {
   const router = createBrowserRouter([
     {
@@ -22,13 +21,9 @@ function App() {
           element: <Home></Home>
         },
         {
-          path : 'product',
-          loader : ()=> fetch('product.json'), 
-          element : <Product></Product>
-
-        },
-        {
-          path: 'topic',element: <Topic></Topic>
+          path:'/topic/:topicId',
+          loader:({params})=> fetch(`https://openapi.programming-hero.com/api/quiz/${params.topicId}`),
+          element:<Topic></Topic>
         },
         {
           path : 'blog', element : <Blog></Blog>

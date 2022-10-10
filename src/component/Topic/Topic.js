@@ -1,11 +1,13 @@
 import React from 'react';
-
-const About = () => {
+import {useLoaderData} from 'react-router-dom'
+const Topic = () => {
+    const quiz = useLoaderData()
+    console.log(quiz);
     return (
         <div>
-            <h3>This is about</h3>
+          
         </div>
     );
 };
 
-export default About;
+export default Topic;

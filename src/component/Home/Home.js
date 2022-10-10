@@ -4,7 +4,6 @@ import ShowQuiz from '../ShowQuiz/ShowQuiz';
 
 const Home = () => {
     const loadQuiz = useLoaderData();
-    console.log(loadQuiz);
     return (
         <div className='grid lg:grid-cols-2 gap-6 lg:py-6 lg:px-36  bg-blue-300'>
             {
