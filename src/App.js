@@ -21,7 +21,7 @@ function App() {
           element: <Home></Home>
         },
       {
-         path : '/topics/:topicsId',
+         path : '/home/:topicsId',
          loader : ({params})=> fetch(`https://openapi.programming-hero.com/api/quiz/${params.topicsId}`),
          element : <Topics></Topics>
       },     
@@ -33,7 +33,7 @@ function App() {
 
   ])
   return (
-    <div className="App">
+    <div className="">
       <RouterProvider router={router}></RouterProvider>
     </div>
   );

@@ -9,7 +9,6 @@ const Header = () => {
       </div>
       <div className="flex-none ml-3 lg:px-[210px] lg:text-2xl font-bold text-gray-400">
        <Link className="mr-4 hover:text-lime-200" to='home'>Home</Link>
-       <Link className="mr-4 hover:text-lime-200" to='topic'>Topics</Link>
        <Link className="lg:mr-4 hover:text-lime-200" to='blog'>Blog</Link>
       </div>
     </div>
