@@ -2,8 +2,8 @@ import './App.css';
 import {createBrowserRouter , RouterProvider} from 'react-router-dom';
 import Main from './layout/Main';
 import Home from './component/Home/Home';
-import About from './component/About/About';
-import Cart from './component/Cart/Cart';
+import Topic from './component/Topic/Topic';
+import Blog from './component/Blog/Blog';
 import ErrorElement from './component/ErrorElement/ErrorElement';
 import Product from './component/Product/Product';
 function App() {
@@ -17,7 +17,9 @@ function App() {
           path : '/' , element : <Home></Home>
         },
         {
-          path : 'home',element: <Home></Home>
+          path : 'home',
+          loader: ()=>fetch('https://openapi.programming-hero.com/api/quiz'),
+          element: <Home></Home>
         },
         {
           path : 'product',
@@ -26,10 +28,10 @@ function App() {
 
         },
         {
-          path: 'about',element: <About></About>
+          path: 'topic',element: <Topic></Topic>
         },
         {
-          path : 'cart', element : <Cart></Cart>
+          path : 'blog', element : <Blog></Blog>
         }
       ]
     }
