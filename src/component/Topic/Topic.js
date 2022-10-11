@@ -15,10 +15,11 @@ const Topic = ({ topic }) => {
   };
 
   const showCorrectAnswer =()=>{
-    Swal.fire({
-      text: `${correctAnswer}`,
-      confirmButtonText: 'Correct Answer',
-    })
+    Swal.fire(
+      'Correct Ans Is👇!',
+      `${correctAnswer}`,
+      'success'
+    )
   }
   
   return (
