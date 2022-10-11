@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Cart = () => {
+const Blog = () => {
     return (
-        <div className='m-5 sm:m-0'>
-            <p className='bg-orange-900 text-justify p-6 lg:m-6 rounded-lg text-lg text-bold my-3'>
+        <div className='m-5 sm:m-0 shadow-lg'>
+            <p className='bg-orange-900 text-justify p-6 lg:m-6 rounded-lg shadow-lg text-lg text-bold my-3'>
                 <span className='text-blue-300 text-center text-2xl'>Question : What is the Purpose react router?</span> 
                 <br />
                 <span className='text-gray-100 text-bold'>
@@ -33,4 +33,4 @@ const Cart = () => {
     );
 };
 
-export default Cart;
+export default Blog;
