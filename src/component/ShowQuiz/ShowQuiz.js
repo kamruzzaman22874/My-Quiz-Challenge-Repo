@@ -2,6 +2,7 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 const ShowQuiz = ({quiz ,loadQuiz}) => {
+  console.log(loadQuiz);
     const {logo , name ,id,total} = quiz;
     return (
   <div className="card bg-base-100 shadow-xl p-4 mt-2 h-[90%] ">

@@ -5,15 +5,20 @@ import ShowQuiz from '../ShowQuiz/ShowQuiz';
 
 const Home = () => {
     const loadQuiz = useLoaderData();
+    console.log(loadQuiz);
     return (
         <div>
             <HeroSection></HeroSection>
             <div className='grid lg:grid-cols-2 mx-5 my-10 gap-5 rounded-lg'>
             
             {
-                (loadQuiz.data).map(quiz=> <ShowQuiz key={quiz.id} quiz={quiz} loadQuiz={loadQuiz}></ShowQuiz> )
+                (loadQuiz.data).map(quiz=> <ShowQuiz 
+                    key={quiz.id} 
+                    quiz={quiz} 
+                    loadQuiz={loadQuiz}
+                ></ShowQuiz> )
             }
-        </div>
+            </div>
         </div>
         
     );
