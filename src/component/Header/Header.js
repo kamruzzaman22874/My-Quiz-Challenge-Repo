@@ -8,9 +8,9 @@ const Header = () => {
         <p className="normal-case  lg:text-2xl font-bold text-slate-100 lg:px-24">Challenging Quiz</p>
       </div>
       <div className="flex-none ml-3 lg:px-[210px] lg:text-2xl font-bold text-gray-400">
-       <Link className="mr-4 hover:text-lime-200" to='home'>Home</Link>
-       <Link className="mr-4 hover:text-lime-200" to='statistics'>Statistics</Link>
-       <Link className="lg:mr-4 hover:text-lime-200" to='blog'>Blog</Link>
+       <Link className="mr-4 hover:text-lime-200" to='/home'>Home</Link>
+       <Link className="mr-4 hover:text-lime-200" to='/statistics'>Statistics</Link>
+       <Link className="lg:mr-4 hover:text-lime-200" to='/blog'>Blog</Link>
       </div>
     </div>
   );
