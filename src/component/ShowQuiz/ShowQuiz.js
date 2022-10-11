@@ -2,11 +2,10 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 const ShowQuiz = ({quiz ,loadQuiz}) => {
-  console.log(loadQuiz);
     const {logo , name ,id,total} = quiz;
     return (
-  <div className="card bg-base-100 shadow-xl lg:h-[600px] h-[550px] mb-2">
-    <figure className='bg-slate-600'><img src= {logo} alt="logo" /></figure>
+  <div className="card bg-base-100 shadow-xl p-4 mt-2 h-[90%] ">
+    <figure className='bg-slate-600 w-50 mx-auto rounded-lg '><img className='w-[50%] ' src= {logo} alt="logo" /></figure>
    <div className='flex'>
    <div className="card-body">
     <h2 className="card-title font-bold text-xl">

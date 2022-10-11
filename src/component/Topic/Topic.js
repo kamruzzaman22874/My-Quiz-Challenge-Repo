@@ -1,6 +1,7 @@
 import React from "react";
 import Option from "../Option/Option";
 import { toast } from "react-toastify";
+import Swal from "sweetalert2";
 
 const Topic = ({ topic }) => {
   const { question, options, correctAnswer } = topic;
@@ -12,12 +13,22 @@ const Topic = ({ topic }) => {
       toast.warning("Oh!! Shit It's Wrong Answer", { autoClose: 500 });
     }
   };
+
+  const showCorrectAnswer =()=>{
+    Swal.fire({
+      text: `${correctAnswer}`,
+      confirmButtonText: 'Correct Answer',
+    })
+  }
+  
   return (
     <div className="w-11/12 mx-auto shadow-lg rounded-md p-3 my-5 border-2 border-blue-500 ">
     <div className="flex align-middle justify-between">
       <h3 className="bg-white">{question.slice(3, question.length - 4)}</h3>
 
-      <button className="btn btn-outline"><svg
+      <button onClick={()=>showCorrectAnswer()} className="btn btn-outline">
+        
+        <svg  
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
