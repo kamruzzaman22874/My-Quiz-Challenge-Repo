@@ -7,16 +7,17 @@ const Topic = ({ topic }) => {
   const handleUseAns = (option) => {
     const answer = option;
     if (answer === correctAnswer) {
-      toast.success("Apni onek valo kheloar", { autoClose: 5000 });
+      toast.success("", { autoClose: 500 });
     } else {
-      toast.warning("Miya tumi ekta faltu lok", { autoClose: 5000 });
+      toast.warning("Miya tumi ekta faltu lok", { autoClose: 500 });
     }
   };
   return (
     <div className="w-11/12 mx-auto shadow-lg rounded-md p-3 my-5 border-2 border-blue-500 ">
     <div className="flex align-middle justify-between">
       <h3 className="bg-white">{question.slice(3, question.length - 4)}</h3>
-      <svg
+
+      <button className="btn btn-outline"><svg
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 24 24"
@@ -34,7 +35,8 @@ const Topic = ({ topic }) => {
           strokeLinejoin="round"
           d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
         />
-      </svg>
+      </svg></button>
+
     </div>
 
       {options.map((option, idx) => (
