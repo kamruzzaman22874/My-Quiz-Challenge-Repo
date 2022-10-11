@@ -22,7 +22,7 @@ export const HeroSection = () => {
               The anatomy of a quiz{' '}
               <span className="relative inline-block px-2">
                 <div className="absolute inset-0 transform -skew-x-12 bg-teal-accent-400" />
-                <span className="relative text-teal-900">Game play</span>
+                <span className="relative text-teal-900">Game Play</span>
               </span>
             </h2>
             <p className="mb-6 text-base text-indigo-100 md:text-lg">

@@ -7,9 +7,9 @@ const Topic = ({ topic }) => {
   const handleUseAns = (option) => {
     const answer = option;
     if (answer === correctAnswer) {
-      toast.success("", { autoClose: 500 });
+      toast.success("Yes It's Correct Answer", { autoClose: 500 });
     } else {
-      toast.warning("Miya tumi ekta faltu lok", { autoClose: 500 });
+      toast.warning("Oh!! Shit It's Wrong Answer", { autoClose: 500 });
     }
   };
   return (
