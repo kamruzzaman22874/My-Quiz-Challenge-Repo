@@ -11,8 +11,8 @@ const Topics = () => {
     return (
         <div>
                 <div className="card card-side bg-base-300 flex  shadow-xl lg:mx-14 mt-2">
-                    <figure><img  className='lg:w-56' src={logo} alt="Movie"/></figure> 
-                    <div className="card-body lg:ml-48 py-12">
+                    <figure><img  className='lg:w-56 w-36' src={logo} alt="img"/></figure> 
+                    <div className="card-body lg:ml-48 lg:py-12">
                         <h2 className="card-title lg:text-3xl text-[17px] lg:px-[150px]"> Quiz Topic : {name}</h2>
                         <h2 className="card-title lg:text-2xl text-[16px] lg:px-48"> Total Quiz : {total}</h2>
                     </div>
