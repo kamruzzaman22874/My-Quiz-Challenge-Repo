@@ -11,7 +11,7 @@ const Home = () => {
             <div className='grid lg:grid-cols-2 gap-6 lg:py-6 lg:px-36  bg-blue-300'>
             
             {
-                (loadQuiz.data).map(quiz=> <ShowQuiz key={quiz.id} quiz={quiz}></ShowQuiz> )
+                (loadQuiz.data).map(quiz=> <ShowQuiz key={quiz.id} quiz={quiz} loadQuiz={loadQuiz}></ShowQuiz> )
             }
         </div>
         </div>

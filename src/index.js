@@ -9,8 +9,10 @@ import 'react-toastify/dist/ReactToastify.css';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
+    <div className='w-11/12 mx-auto'>
     <App />
-    <ToastContainer position='top-center' />
+      <ToastContainer position='top-center' />
+      </div>
   </React.StrictMode>
 );
 
