@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 export const HeroSection = () => {
     return (
-      <div className="relative bg-purple-700 mb-4">
+      <div className="relative bg-purple-400 mb-4">
         <div className="absolute inset-x-0 bottom-0">
           <svg
             viewBox="0 0 224 12"
