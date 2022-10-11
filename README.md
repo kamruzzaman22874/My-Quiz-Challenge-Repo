@@ -1,6 +1,6 @@
-# Assignment Project: 09 ==> Quiz Related Project Quizo
+# Project : Challenging Quiz
 
-* Project Repo Link: 
+* Code Link: 
 (<https://github.com/programming-hero-web-course2/b6-quiz-crackerz-kamruzzaman22874>)
 # Live site Link
 

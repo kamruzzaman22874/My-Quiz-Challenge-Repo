@@ -5,7 +5,6 @@ import ShowQuiz from '../ShowQuiz/ShowQuiz';
 
 const Home = () => {
     const loadQuiz = useLoaderData();
-    console.log(loadQuiz);
     return (
         <div>
             <HeroSection></HeroSection>
