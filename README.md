@@ -1,8 +1,12 @@
-# Project : Challenging Quiz
+# Project Name : Challenging Quiz
 
 * Code Link: 
 (<https://github.com/programming-hero-web-course2/b6-quiz-crackerz-kamruzzaman22874>)
-# Live site Link
+
+
+*Live Link & Netlify Link :
+
+(<https://papaya-truffle-1ab65a.netlify.app/>)
 
 This project was Created with Tailwind and DaisyUI
 All Resource Link:-
@@ -20,7 +24,7 @@ Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
 The page will reload when you make changes.\
-You may also see any lint errors in the console.
+You may also see any link errors in the console.
 
 ### npm test
 
