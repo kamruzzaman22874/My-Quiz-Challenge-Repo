@@ -6,7 +6,7 @@
 
 *Live Link & Netlify Link :
 
-(<https://papaya-truffle-1ab65a.netlify.app/>)
+(<https://legendary-kelpie-8e4616.netlify.app>)
 
 This project was Created with Tailwind and DaisyUI
 All Resource Link:-
